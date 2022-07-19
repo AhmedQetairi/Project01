@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.sky_69f8184d-7b01-4339-a0aa-f81acc9f6e3c" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">sky</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-diamond,#f1c40f,#34495e</field>
+  </record>
+  <record id="studio_customization.sky_items_f6da32f2-8745-41e8-a2e3-f0d0b67b4b0b" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.items_530d8a2a-2e5a-4295-a633-e616a2de92e9"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Items</field>
+    <field name="parent_id" ref="studio_customization.sky_69f8184d-7b01-4339-a0aa-f81acc9f6e3c"/>
+    <field name="sequence">11</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.sky_project_1a04101c-1f14-4e83-b4c7-58f39c3a43db" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.project_8f5396fe-a3fa-4f74-be19-6dc953ed60d9"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Project</field>
+    <field name="parent_id" ref="studio_customization.sky_69f8184d-7b01-4339-a0aa-f81acc9f6e3c"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>
